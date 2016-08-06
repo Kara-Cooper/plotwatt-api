@@ -82,4 +82,7 @@ class Plotwatt(object):
         assert res.status_code == 200
         return res
 
+HOUSE_ID = 18044
+API_KEY = "ZWJmMTY5MzIyMzgz"
+pw = Plotwatt(HOUSE_ID, API_KEY)
 new_meter_ids = pw.create_meters(5)
