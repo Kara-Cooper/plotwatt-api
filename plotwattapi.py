@@ -81,3 +81,5 @@ class Plotwatt(object):
         res = self._request(self.push_readings_url, data)
         assert res.status_code == 200
         return res
+
+new_meter_ids = pw.create_meters(5)
